@@ -126,6 +126,8 @@ JWT • CSRF Protection • Rate Limiting • Structured Logs • Audit Trail
 
 ---
 
+| Profile Visitors |
+|:-:|
 <p align="center">
   <img src="https://count.getloli.com/get/@Richard-Sup-Dev?theme=moebooru" alt="Richard's Visits" />
 </p>
