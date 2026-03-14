@@ -134,56 +134,109 @@ JWT • CSRF Protection • Rate Limiting • Structured Logs • Audit Trail
 
 ---
 
-# 🧮 Projeto Destaque
+# 🚀 Projeto Destaque
 
-## Calculadora em Python
+## 🏭 EDDA — Sistema de Relatórios Técnicos Industriais
 
-Projeto desenvolvido em equipe durante a faculdade para aplicar conceitos fundamentais de programação.
+Sistema web completo para gestão de relatórios técnicos de manutenção industrial, desenvolvido com foco em  
+segurança, arquitetura escalável e uso em produção.
 
-### Funcionalidades
-
-✔ Operações matemáticas
-✔ Interface no terminal
-✔ Estrutura modular
+🔗 Repositório:  
+https://github.com/Richard-Sup-Dev/edda-sistema
 
 ---
 
-# 🏗 Arquitetura do Projeto
+### ⚙️ Funcionalidades
+
+✔ Geração automática de relatórios em PDF  
+✔ Upload de fotos técnicas  
+✔ Cadastro de clientes e orçamentos  
+✔ Dashboard com métricas  
+✔ Autenticação JWT  
+✔ Controle de permissões (roles)  
+✔ Logs estruturados e auditoria  
+✔ Rate limiting e validação de dados  
+✔ Sistema pronto para Docker  
+✔ Testes automatizados  
+
+---
+
+### 🧠 Tecnologias utilizadas
+
+Backend  
+- Node.js  
+- Express  
+- PostgreSQL  
+- Sequelize  
+- JWT  
+- PDFKit  
+
+Frontend  
+- React  
+- Vite  
+- Tailwind CSS  
+- React Router  
+- Axios  
+
+DevOps  
+- Docker  
+- Docker Compose  
+- GitHub Actions  
+
+---
+
+### 🎯 Objetivo do projeto
+
+Criar um sistema real para uso em produção, aplicando boas práticas de:
+
+- Arquitetura de software
+- Segurança
+- Testes
+- DevOps
+- Escalabilidade
+
+---
+
+## 🏗 Arquitetura do Projeto — EDDA
 
 ```mermaid
 graph TD
 
-User --> Input
-Input --> Operation
-Operation --> PythonLogic
-PythonLogic --> Result
+User[User] --> Frontend
+Frontend[Frontend] --> Backend
+Backend[Backend] --> Database
+Backend --> Auth
+Backend --> Logs
+Backend --> PDF
+Backend --> Storage
+
+Database[PostgreSQL]
+Auth[JWT]
+Logs[AuditLogs]
+PDF[PDFGenerator]
+Storage[Uploads]
+
+Backend --> Docker
+Docker --> BackendContainer
+Docker --> FrontendContainer
+Docker --> DBContainer
 ```
 
----
-
-# 📂 Estrutura
-
-```text
-calculator_project
-│
-├── main.py
-├── operations.py
-├── utils.py
-└── README.md
-```
-
----
-
-# 🧭 Roadmap de Aprendizado
+## Roadmap de Aprendizado
 
 ```mermaid
-graph LR
-
-A[Python] --> B[Backend]
-B --> C[APIs]
-C --> D[Database]
-D --> E[System Architecture]
-E --> F[Scalable Systems]
+graph TD
+JavaScript --> NodeJS
+NodeJS --> Backend
+Backend --> API
+API --> Database
+Database --> JWT
+JWT --> Logs
+Logs --> Docker
+Docker --> CICD
+CICD --> Production
+Production --> SaaS
+SaaS --> ScalableSystems
 ```
 
 ---
@@ -196,10 +249,10 @@ Meu objetivo é atuar como **Desenvolvedor Backend**, participando da construç�
 
 # 📫 Contato
 
-GitHub
+GitHub  
 https://github.com/Richard-Sup-Dev
 
-LinkedIn
+LinkedIn  
 https://www.linkedin.com/in/richard-itsou-254725361/
 
 ---
